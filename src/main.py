@@ -14,6 +14,10 @@ def index():
 def about():
     return render_template('about.html', title="About")
 
+# we can store some of our future projects here
+@app.route("/future-projects")
+def future():
+    return render_template('future.html', title="Future Projects")
 
 if __name__ == '__main__':
     app.run(debug=True)
