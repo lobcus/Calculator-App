@@ -21,5 +21,15 @@ def future():
     return render_template('future.html', title="Future Projects")
 
 
+@app.route("/testing")
+def testing():
+    return render_template('testing.html', title="Testing")
+
+
+@app.route("/calculator")
+def calculator():
+    return render_template('calculator.html', title="Calculator")
+
+
 if __name__ == '__main__':
     app.run(debug=True)
