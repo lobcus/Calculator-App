@@ -28,6 +28,12 @@
       </nav>
     </header>
 
+    <div class="col text-center">
+      {% if title %}
+        <h1>{{title}}</h1>
+      {% endif %}
+    </div>
+
     <main role="main" class="container">
       <div class="row">
         <div class="row align-items-center justify-content-center">
@@ -38,11 +44,13 @@
 
     <article class="container">
       <footer>
+        <small>
           Designed by: 
           <ul> 
             <li>Alfred Mathew: alfmat@live.unc.edu</li>
             <li>Lucas Chen: lobcus@live.unc.edu</li>
           </ul>
+        </small>
       </footer>
     </article>
 
